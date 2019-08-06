@@ -4,6 +4,7 @@ import { Inicio } from "./components/Inicio";
 import { Footer } from "./components/Footer";
 import { Components } from "./components/Components";
 import { Counter } from "./components/Counter";
+import { CounterFail } from "./components/CounterFail";
 
 export function App() {
   const [view, setView] = useState("inicio");
@@ -18,6 +19,9 @@ export function App() {
 
       case "counter":
         return <Counter setView={setView} />;
+
+      case "counterFail":
+        return <CounterFail setView={setView} />;
 
       default:
         return <Inicio setView={setView} />;
