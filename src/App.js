@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import { Inicio } from "./components/Inicio";
 import { Footer } from "./components/Footer";
+import { Components } from "./components/Components";
+import { Counter } from "./components/Counter";
 
 export function App() {
   const [view, setView] = useState("inicio");
@@ -12,8 +14,10 @@ export function App() {
         return <Inicio setView={setView} />;
 
       case "components":
-        console.log("holi");
-        return <h1>Holi</h1>;
+        return <Components setView={setView} />;
+
+      case "counter":
+        return <Counter setView={setView} />;
 
       default:
         return <Inicio setView={setView} />;

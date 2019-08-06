@@ -95,8 +95,6 @@ img {
 
 .container {
   grid-area: container;
-  display: flex;
-  align-items: center;
 }
 
 .modal {
@@ -105,6 +103,16 @@ img {
   padding: 16px 32px;
   border-radius: 8px;
   text-align: center;
+}
+
+button.volver {
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+  margin-top: 16px;
+  font-size: 16px;
+  background-color: rgb(210, 5, 180);
+  border: 1px solid rgb(206, 125, 194);
 }
 
 .modal .logos {
@@ -121,6 +129,10 @@ img {
   margin-top: 32px;
   display: flex;
   justify-content: space-around;
+}
+
+.links a {
+  text-decoration: none;
 }
 
 .links .link {
@@ -160,4 +172,25 @@ img {
   padding: 8px 16px;
   max-width: 50px;
   background-color: #cc0000;
+}
+
+.counter .count {
+  height: 50px;
+  width: 100px;
+  font-size: 36px;
+  background-color: #cc0000;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 36px;
+}
+
+.components .option {
+  display: inline-block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.components .option:hover {
+  border-bottom: 1px solid #9c3587;
 }
