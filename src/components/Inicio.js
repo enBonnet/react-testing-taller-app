@@ -26,6 +26,12 @@ export function Inicio({ setView }) {
       <div className="links">
         <a
           className="link"
+          href="https://github.com/enBonnet/react-testing-taller-app"
+        >
+          Repositorio
+        </a>
+        <a
+          className="link"
           href="https://testing-library-taller-ppt.netlify.com/"
         >
           Presentacion
