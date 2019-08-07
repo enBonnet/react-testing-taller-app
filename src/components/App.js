@@ -7,7 +7,7 @@ import { Counter } from "./Counter";
 import { CounterFail } from "./CounterFail";
 import { ButtonPro } from "./ButtonPro";
 import { Form } from "./Form";
-import { Login } from "./Login";
+import { Fetch } from "./Fetch";
 
 export function App() {
   const [view, setView] = useState("inicio");
@@ -32,8 +32,8 @@ export function App() {
       case "form":
         return <Form setView={setView} />;
 
-      case "login":
-        return <Login setView={setView} />;
+      case "fetch":
+        return <Fetch url={url} setView={setView} />;
 
       default:
         return <Inicio setView={setView} />;

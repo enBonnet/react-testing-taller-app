@@ -194,3 +194,40 @@ button.volver {
 .components .option:hover {
   border-bottom: 1px solid #9c3587;
 }
+
+button.botonpro {
+  font-size: 16px;
+  padding: 8px 16px;
+  margin: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #9c3587;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario form label {
+  display: inline-grid;
+  margin: 16px 0;
+}
+
+.formulario form label input {
+  border: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.formulario form > button {
+  margin-top: 16px;
+  border: none;
+  padding: 8px 16px;
+  background-color: #9c3587;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 16px;
+}

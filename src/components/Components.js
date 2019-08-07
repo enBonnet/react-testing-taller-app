@@ -20,8 +20,8 @@ export function Components({ setView }) {
         Formulario
       </div>
       <br />
-      <div className="option" onClick={() => setView("login")}>
-        Login
+      <div className="option" onClick={() => setView("fetch")}>
+        Fetch
       </div>
       <br />
       <button className="volver" onClick={() => setView("inicio")}>
