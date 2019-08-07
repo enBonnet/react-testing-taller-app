@@ -33,7 +33,7 @@ export function App() {
         return <Form setView={setView} />;
 
       case "fetch":
-        return <Fetch url={url} setView={setView} />;
+        return <Fetch setView={setView} />;
 
       default:
         return <Inicio setView={setView} />;
