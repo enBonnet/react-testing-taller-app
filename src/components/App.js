@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 
-import { Inicio } from "./components/Inicio";
-import { Footer } from "./components/Footer";
-import { Components } from "./components/Components";
-import { Counter } from "./components/Counter";
-import { CounterFail } from "./components/CounterFail";
+import { Inicio } from "./Inicio";
+import { Footer } from "./Footer";
+import { Components } from "./Components";
+import { Counter } from "./Counter";
+import { CounterFail } from "./CounterFail";
+import { ButtonPro } from "./ButtonPro";
+import { Form } from "./Form";
+import { Login } from "./Login";
 
 export function App() {
   const [view, setView] = useState("inicio");
@@ -22,6 +25,15 @@ export function App() {
 
       case "counterFail":
         return <CounterFail setView={setView} />;
+
+      case "buttonPro":
+        return <ButtonPro setView={setView} />;
+
+      case "form":
+        return <Form setView={setView} />;
+
+      case "login":
+        return <Login setView={setView} />;
 
       default:
         return <Inicio setView={setView} />;

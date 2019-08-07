@@ -12,6 +12,18 @@ export function Components({ setView }) {
         Contador Fail
       </div>
       <br />
+      <div className="option" onClick={() => setView("buttonPro")}>
+        Boton Pro
+      </div>
+      <br />
+      <div className="option" onClick={() => setView("form")}>
+        Formulario
+      </div>
+      <br />
+      <div className="option" onClick={() => setView("login")}>
+        Login
+      </div>
+      <br />
       <button className="volver" onClick={() => setView("inicio")}>
         Volver
       </button>
